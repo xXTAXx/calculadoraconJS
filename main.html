@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    
+</head>  
+
+<body>
+    <div id="header">
+        <h1>Calculadora con JS</h1>
+    </div>
+    <div id="body">
+        <div id="calc">
+            <input id="display" readonly>
+            <div  id="tecla">
+                
+                <button id="btn1" onclick="appendToDisplay(1)">1</button>
+                <button id="btn2" onclick="appendToDisplay(2)">2</button>
+                <button id="btn3" onclick="appendToDisplay(3)">3</button>
+                <button id="btn+" onclick="appendToDisplay('+')">+</button>
+                
+                <button id="btn4" onclick="appendToDisplay(4)">4</button>
+                <button id="btn5" onclick="appendToDisplay(5)">5</button>
+                <button id="btn6" onclick="appendToDisplay(6)">6</button>
+                <button id="btn-" onclick="appendToDisplay('-')">-</button>
+                
+                <button id="btn7" onclick="appendToDisplay(7)">7</button>
+                <button id="btn8" onclick="appendToDisplay(8)">8</button>
+                <button id="btn9" onclick="appendToDisplay(9)">9</button>
+                <button id="btnx" onclick="appendToDisplay('*')">x</button>
+                
+                <button id="btn0" onclick="appendToDisplay(0)">0</button>
+                <button id="btn." onclick="appendToDisplay('.')">.</button>
+                <button id="btn/" onclick="appendToDisplay('/')">/</button>
+                <button id="btn=" onclick="operation()">=</button>
+                
+
+                <button id="btnopen" onclick="appendToDisplay('(')">(</button>
+                <button id="btnclose" onclick="appendToDisplay(')')">)</button>
+                <button id="btnC" onclick="clearDisplay()">C</button>
+                <button id="btnAC" onclick="BS()" style="font-size: .7rem;">Back Space</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
